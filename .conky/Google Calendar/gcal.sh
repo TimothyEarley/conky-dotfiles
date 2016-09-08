@@ -19,12 +19,14 @@ gcalcli --conky --color_date cyan --color_border black --color_now_marker red --
         -e 's/(0\x76(B/┴/g' \
         -e 's/(0\x77(B/┬/g' \
         -e 's/\#/\\\#/g' \
-	| perl -0777 -pe 's/\$(?!{)/\$\$/g' \ #escape $ with $$
+	| perl -0777 -pe 's/\$(?!{)/\$\$/g' \
 	| perl -0777 -pe 'while(s/(\$\{color \w+\})([^\{]*?)\1/\1\2/g) {}'
 
 # -0777 removes the line delimeter causing the input to be read as one string
 # -e execute the command given
 # -p add 'while (<>) { ... } print;'
+
+# escape $ with $$
 
 #colours: black, brightblack, red, brightred, green brightgreen,
 # yellow, brightyellow, blue, brughtblue, magenta, brightmagenta,
