@@ -1,0 +1,3 @@
+[submodule ".conky/now-clocking"]
+	path = .conky/now-clocking
+	url = git@github.com:TimothyEarley/now-clocking.git
