@@ -1,3 +1,6 @@
 [submodule ".conky/now-clocking"]
 	path = .conky/now-clocking
 	url = git@github.com:TimothyEarley/now-clocking.git
+[submodule ".conky/conky-Vision"]
+	path = .conky/conky-Vision
+	url = git@github.com:zagortenay333/conky-Vision.git
